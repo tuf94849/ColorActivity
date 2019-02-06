@@ -11,6 +11,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final View spinner = findViewById(R.id.spinner);
 
+        //must have 10 colors
+        String[] colorsArr = {"White", "Black", "Blue", "Cyan", "Gray", "Green",
+        "Magenta", "Red", "Yellow"};
     }
 }
