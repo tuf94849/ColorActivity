@@ -15,6 +15,6 @@ public class MainActivity extends AppCompatActivity {
 
         //must have 10 colors
         String[] colorsArr = {"White", "Black", "Blue", "Cyan", "Gray", "Green",
-        "Magenta", "Red", "Yellow"};
+        "Magenta", "Red", "Yellow", "LTGray"};
     }
 }
