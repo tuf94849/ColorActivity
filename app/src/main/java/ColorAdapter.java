@@ -1,4 +1,5 @@
 import android.content.Context;
+import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -9,26 +10,28 @@ import org.w3c.dom.Text;
 public class ColorAdapter extends BaseAdapter {
 
     Context c;
-    int position;
+    String[] colorsArr;
 
 
-    public ColorAdapter(Context c, int position){
+    public ColorAdapter(Context c, String[] colors){
         this.c = c;
-        this.position = position;
+        this.colorsArr = colors;
 
     }
 
     @Override
     public int getCount() {
-        return 0;
+        int count = colorsArr.length;
+        return count;
     }
 
     @Override
     public Object getItem(int position) {
-        return null;
+        return colorsArr[position];
     }
 
     @Override
+    //can leave it as default
     public long getItemId(int position) {
         return 0;
     }
@@ -36,7 +39,8 @@ public class ColorAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         TextView tv = new TextView((c));
-        //tv. set color
+        tv.setBackgroundColor(Color.parseColor(colorsArr[position]));
+        tv.setText(colorsArr[position]);
         return tv;
     }
 }
