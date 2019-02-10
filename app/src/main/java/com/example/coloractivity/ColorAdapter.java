@@ -40,8 +40,8 @@ public class ColorAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         TextView tv = new TextView((c));
         tv.setText(colorsArr[position]);
-        tv.setBackgroundColor(Color.parseColor(colorsArr[position]));
-        //tv.setBackgroundColor(Color.parseColor("White"));
+        //tv.setBackgroundColor(Color.parseColor(colorsArr[position]));
+        tv.setBackgroundColor(Color.parseColor("White"));
 
 
         return tv;
@@ -51,16 +51,20 @@ public class ColorAdapter extends BaseAdapter {
 
     }
 
-
+*/
     @Override
     public View getDropDownView(int position, View convertView, ViewGroup parent) {
 
         TextView tv = new TextView((c));
+        tv.setText(colorsArr[position]);
+        tv.setBackgroundColor(Color.parseColor(colorsArr[position]));
+        //tv.setBackgroundColor(Color.parseColor("White"));
+
 
         return tv;
 
     }
-    */
+
 
 
 
