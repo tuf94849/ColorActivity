@@ -3,6 +3,7 @@ package com.example.coloractivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.BaseAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,5 +17,9 @@ public class MainActivity extends AppCompatActivity {
         //must have 10 colors
         String[] colorsArr = {"White", "Black", "Blue", "Cyan", "Gray", "Green",
         "Magenta", "Red", "Yellow", "LTGray"};
+
+        ColorAdapter colorAdapter = new ColorAdapter(MainActivity.this, colorsArr);
+
+
     }
 }

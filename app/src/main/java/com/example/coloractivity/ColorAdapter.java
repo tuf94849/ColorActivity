@@ -1,3 +1,5 @@
+package com.example.coloractivity;
+
 import android.content.Context;
 import android.graphics.Color;
 import android.view.View;
@@ -5,10 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 public class ColorAdapter extends BaseAdapter {
-
     Context c;
     String[] colorsArr;
 
