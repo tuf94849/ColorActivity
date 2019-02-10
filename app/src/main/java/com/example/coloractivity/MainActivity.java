@@ -19,8 +19,9 @@ public class MainActivity extends AppCompatActivity {
 
         //must have 10 colors
         //colors like "LTGray" dont work well with parsecolor
+        //LTGray must be spelled out as "LightGray
         final String[] colorsArr = {"White", "Black", "Blue", "Cyan", "Gray", "Green",
-        "Magenta", "Red", "Yellow"};
+        "Magenta", "Red", "Yellow", "DarkGray", "LightGray"};
 
         ColorAdapter colorAdapter = new ColorAdapter(MainActivity.this, colorsArr);
 

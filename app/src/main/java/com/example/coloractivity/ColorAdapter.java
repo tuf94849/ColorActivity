@@ -42,6 +42,7 @@ public class ColorAdapter extends BaseAdapter {
         tv.setText(colorsArr[position]);
         //tv.setBackgroundColor(Color.parseColor(colorsArr[position]));
         tv.setBackgroundColor(Color.parseColor("White"));
+        
 
 
         return tv;
