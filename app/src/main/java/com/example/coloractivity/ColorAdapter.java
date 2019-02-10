@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class ColorAdapter extends BaseAdapter {
@@ -38,8 +39,30 @@ public class ColorAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         TextView tv = new TextView((c));
-        tv.setBackgroundColor(Color.parseColor(colorsArr[position]));
         tv.setText(colorsArr[position]);
+        tv.setBackgroundColor(Color.parseColor(colorsArr[position]));
+        //tv.setBackgroundColor(Color.parseColor("White"));
+
+
         return tv;
     }
+
+    /*public View getDropDownView(int position, View convertView, ViewGroup parent){
+
+    }
+
+
+    @Override
+    public View getDropDownView(int position, View convertView, ViewGroup parent) {
+
+        TextView tv = new TextView((c));
+
+        return tv;
+
+    }
+    */
+
+
+
+
 }
